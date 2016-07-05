@@ -1,0 +1,16 @@
+.question.two {
+	label {
+		color: $seagreen;
+		border: 2px solid $seagreen;
+	}
+	input[type="checkbox"] {
+		position: absolute;
+	    -webkit-appearance: menulist-button;
+	    opacity: 0;
+	    height: 29px;
+	}
+	.check-with-label:checked + .label-for-check {
+	  background: $seagreen;
+	  color: $white;
+	}
+}

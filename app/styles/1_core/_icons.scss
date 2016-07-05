@@ -1,0 +1,50 @@
+///*------------------------------------*\
+//    #CORE - ICONS
+//\*------------------------------------*/
+/* Note: Will be replaced once SVG feature branch is completed */
+
+[class^='icon-'],
+[class*=' icon-'] {
+  font-family: $icomoon;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 2rem;
+  // Better Font Rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before {
+    font-size: inherit;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 1.5rem;
+  }
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+%icon-chevron-right,
+.icon-chevron-right{
+  &:before{
+    content: "\e902";
+  }
+}
+
+%icon-check,
+.icon-check{
+  &:before{
+    content: '\e900';
+  }
+}
+
+%icon-edit,
+.icon-edit{
+  &:before{
+    content: '\e901';
+  }
+}

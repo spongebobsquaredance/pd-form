@@ -1,0 +1,12 @@
+.form {
+	.question {
+		background: #fff;
+		&.one {
+			overflow: visible;
+			margin-top: 50px;
+		}
+		&.two {
+			margin-top: 25px;
+		}
+	}
+}

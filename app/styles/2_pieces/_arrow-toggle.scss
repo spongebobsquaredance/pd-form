@@ -1,0 +1,14 @@
+.question.one {
+	position: relative;
+}
+.toggle-container {
+	text-align: center;
+}
+.arrow-toggle {
+	display: inline-block;
+	position: absolute;
+	width: 50px;
+	height: 40px;
+	background: $white;
+	top: -35px;
+}
