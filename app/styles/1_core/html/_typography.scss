@@ -29,11 +29,13 @@ input[type='submit'] {
 
 .hero {
 	h1 {
-		font-family: $sansBold;
+		font-family: $sansRegular;
 		color: $white;
+		font-size: 85px;
 	}
 	h2 {
 		color: $dustblue;
+		font-size: 20px;
 	}
 }
 
@@ -41,12 +43,18 @@ input[type='submit'] {
 	h1 {
 		color: $caveblack;
 		font-family: $sansBold;
+		font-size: 32px;
+		margin: 0 0 18px 0;
 	}
 	h2 {
 		color: $dovegray;
+		font-size: 18px;
+		margin: 0 0 0 3px;
 	}
 	.user-action {
 		color: $silver;
+		font-size: 14px;
+		letter-spacing: 1px;
 	}
 	.next a {
 		color: $white;

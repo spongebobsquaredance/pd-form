@@ -1,12 +1,42 @@
 .form {
+	.header {
+		overflow: hidden;
+		margin-bottom: 40px;
+		.span-8 {
+			margin-top: 38px;
+		}
+		.span-4 {
+			margin-top: 42px;
+		}
+	} 
 	.question {
 		background: #fff;
+		.inner-wrapper {
+			max-width: 960px;
+		}
+		.fields-wrapper,
+		fieldset {
+			overflow: hidden;
+			clear: both;
+		}
 		&.one {
 			overflow: visible;
 			margin-top: 50px;
+			input {
+				width: 100%;
+				display: inline-block;
+				padding: 10px 0 10px 20px;
+			}
 		}
 		&.two {
 			margin-top: 25px;
 		}
+	}
+	.user-action {
+		display: block;
+		text-align: right;
+	}
+	.wrapper-submit {
+		text-align: center;
 	}
 }

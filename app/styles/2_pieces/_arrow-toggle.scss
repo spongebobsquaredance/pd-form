@@ -7,8 +7,18 @@
 .arrow-toggle {
 	display: inline-block;
 	position: absolute;
-	width: 50px;
-	height: 40px;
+	width: 60px;
+	height: 45px;
 	background: $white;
-	top: -35px;
+	top: -40px;
+	text-align: center;
+	// margin-left: -42px;
+	&:after {
+		content: '';
+		border-color: $mediumblue transparent transparent transparent;
+		border-style: solid;
+		border-width: 9px 7px 0 7px;
+		display: inline-block;
+		margin-top: 18px;
+	}
 }

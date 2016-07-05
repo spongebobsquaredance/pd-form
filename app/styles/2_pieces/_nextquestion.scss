@@ -1,5 +1,9 @@
 .next {
 	background: $seagreen;
+	background: -moz-linear-gradient(-45deg,  rgba(56,163,140,1) 44%, rgba(42,146,144,1) 60%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(56,163,140,1) 44%,rgba(42,146,144,1) 60%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(56,163,140,1) 44%,rgba(42,146,144,1) 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38a38c', endColorstr='#2a9290',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	text-align: center;
 	a {
 		display: block;
