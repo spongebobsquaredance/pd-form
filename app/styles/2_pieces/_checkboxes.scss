@@ -1,7 +1,8 @@
 .question.two {
 	label {
-		color: $seagreen;
 		border: 2px solid $seagreen;
+		padding: 10px 0 10px 20px;
+		text-align: center;
 	}
 	input[type="checkbox"] {
 		position: absolute;

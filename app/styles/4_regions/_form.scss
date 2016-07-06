@@ -36,6 +36,17 @@
 		}
 		.fields-wrapper {
 			margin-bottom: 42px;
+			.span-6 {
+				width: 48%;
+				margin-right: 4%;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+			.span-8 {
+				width: 60.35514%;
+				margin-right: 6.93458%;
+			}
 		}
 		&.one {
 			overflow: visible;
@@ -43,6 +54,14 @@
 		}
 		&.two {
 			margin-top: 25px;
+			.span-6 > div {
+				margin-bottom: 18px;
+			}
+			label span {
+				display: inline-block;
+				float: right;
+				margin-top: -3px;
+			}
 		}
 	}
 	.user-action {

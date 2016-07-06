@@ -15,7 +15,8 @@ html {
 }
 
 body {
-  background: $darkblue;
+  background: $darkblue url("../../images/bg.jpg") top/cover no-repeat;
+  padding-bottom: 50px;
   @include font-size(16, 24);
   font-family: $fallbackSans;
   overflow-x: hidden;

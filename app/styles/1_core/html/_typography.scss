@@ -2,7 +2,7 @@
 //    #CORE/HTML - TYPOGRAPHY
 //\*------------------------------------*/
 body {
-	-webkit-font-smooting: antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 
 em {
@@ -25,6 +25,7 @@ cite {}
 .next,
 input[type='submit'] {
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .hero {
@@ -36,6 +37,7 @@ input[type='submit'] {
 	h2 {
 		color: $dustblue;
 		font-size: 20px;
+		// -webkit-font-smooting: antialiased;
 	}
 }
 
@@ -54,7 +56,6 @@ input[type='submit'] {
 	.user-action {
 		color: $silver;
 		font-size: 13px;
-		letter-spacing: 1px;
 	}
 	.next a {
 		color: $white;
@@ -63,10 +64,15 @@ input[type='submit'] {
 		color: $dovegray;
 		font-size: 14px;
 	}
+	.question.two label {
+		color: $seagreen;
+		font-size: 14px;
+	}
 }
 
 footer {
 	color: $dustblue;
+	font-size: 13px;
 }
 
 

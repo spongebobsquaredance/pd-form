@@ -40,11 +40,19 @@ input[type='checkbox'] {
 input[type='submit'] {
 	display: inline-block;	
 	border: none;
-	background: $seagreen;
 	color: $white;
-	cursor: pointer;
-	padding: 15px 50px;
-	margin-top: 20px;
+	background: $seagreen;
+	background: -moz-linear-gradient(-45deg,  rgba(56,163,140,1) 40%, rgba(42,146,144,1) 70%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(56,163,140,1) 40%,rgba(42,146,144,1) 70%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(56,163,140,1) 40%,rgba(42,146,144,1) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38a38c', endColorstr='#2a9290',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	padding: 16px 80px;
+	margin-top: 60px;
+	opacity: 0.7;
+	&.active {
+		opacity: 1;
+		cursor: pointer;
+	}
 }
 
 input[type='text'] {}
@@ -67,6 +75,8 @@ textarea {
 	border: 1px solid $mercury;
 	color: $dovegray;
 	line-height: 1.25;
+	width: 100%;
+	margin-top: 18px;
 }
 
 select {

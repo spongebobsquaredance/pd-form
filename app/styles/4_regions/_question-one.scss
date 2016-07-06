@@ -1,24 +1,17 @@
 .question.one {
-	.fields-wrapper .span-6 {
-		width: 48%;
-		margin-right: 4%;
-		&:last-child {
-			margin-right: 0;
-		}
-	}
-	.fields-wrapper {
-		.span-6 {
-			width: 48%;
-			margin-right: 4%;
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-		.span-8 {
-			width: 60.35514%;
-			margin-right: 6.93458%;
-		}
-	}
+	// .fields-wrapper {
+	// 	.span-6 {
+	// 		width: 48%;
+	// 		margin-right: 4%;
+	// 		&:last-child {
+	// 			margin-right: 0;
+	// 		}
+	// 	}
+	// 	.span-8 {
+	// 		width: 60.35514%;
+	// 		margin-right: 6.93458%;
+	// 	}
+	// }
 	input {
 		display: inline-block;
 		padding: 10px 0 10px 20px;
