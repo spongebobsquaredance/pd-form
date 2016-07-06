@@ -1,8 +1,9 @@
 .question.two {
 	label {
 		border: 2px solid $seagreen;
-		padding: 10px 0 10px 20px;
+		padding: 10px 0;
 		text-align: center;
+		cursor: pointer;
 	}
 	input[type="checkbox"] {
 		position: absolute;
@@ -13,5 +14,11 @@
 	.check-with-label:checked + .label-for-check {
 	  background: $seagreen;
 	  color: $white;
+	}
+	textarea {
+		display: none;
+		&.active {
+			display: block;
+		}
 	}
 }

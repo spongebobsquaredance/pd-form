@@ -5,6 +5,9 @@
 	padding: 10px 0 10px 20px;
 	margin: 1px 5% 1px 1px;
 	width: 100%;
+	@include device-size(mobile) {
+		width: 99%;
+	}
 }
 .statemenuHover,
 .statemenuFocus {

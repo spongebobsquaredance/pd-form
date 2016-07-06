@@ -1,17 +1,4 @@
 .question.one {
-	// .fields-wrapper {
-	// 	.span-6 {
-	// 		width: 48%;
-	// 		margin-right: 4%;
-	// 		&:last-child {
-	// 			margin-right: 0;
-	// 		}
-	// 	}
-	// 	.span-8 {
-	// 		width: 60.35514%;
-	// 		margin-right: 6.93458%;
-	// 	}
-	// }
 	input {
 		display: inline-block;
 		padding: 10px 0 10px 20px;
@@ -22,9 +9,28 @@
 			outline: none;
 			border: 2px solid $seagreen;
 			margin: 0 0 18px 0;
-		}
-		&.valid {
-			padding-left: 35px;
 		}	
+	}
+	fieldset div.valid {
+		position: relative;
+		&:before {
+			font-family: $icomoon;
+			content: "\e900";
+			color: $white;
+			background: $seagreen;
+			border-radius: 100%;
+			padding-left: 3px;
+			font-size: 12px;
+			position: absolute;
+			height: 17px;
+			width: 17px;
+			top: 15px;
+			left: 12px;
+			line-height: 1.6;
+		}
+		input,
+		.statemenu {
+			padding-left: 35px;
+		}
 	}
 }
