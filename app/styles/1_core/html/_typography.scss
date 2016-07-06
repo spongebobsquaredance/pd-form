@@ -53,11 +53,15 @@ input[type='submit'] {
 	}
 	.user-action {
 		color: $silver;
-		font-size: 14px;
+		font-size: 13px;
 		letter-spacing: 1px;
 	}
 	.next a {
 		color: $white;
+	}
+	.question.one input {
+		color: $dovegray;
+		font-size: 14px;
 	}
 }
 

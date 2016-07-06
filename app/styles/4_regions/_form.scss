@@ -14,27 +14,47 @@
 		.inner-wrapper {
 			max-width: 960px;
 		}
+		&.complete {
+			h1 {
+				&:before {
+					font-family: $icomoon;
+					content: "\e900";
+					color: $white;
+					background: $seagreen;
+					border-radius: 100%;
+					padding: 5px;
+					font-size: 16px;
+					vertical-align: top;
+					margin-right: 12px;
+				}
+			}
+		}
 		.fields-wrapper,
 		fieldset {
 			overflow: hidden;
 			clear: both;
 		}
+		.fields-wrapper {
+			margin-bottom: 42px;
+		}
 		&.one {
 			overflow: visible;
 			margin-top: 50px;
-			input {
-				width: 100%;
-				display: inline-block;
-				padding: 10px 0 10px 20px;
-			}
 		}
 		&.two {
 			margin-top: 25px;
 		}
 	}
 	.user-action {
-		display: block;
-		text-align: right;
+		display: inline-block;
+		float: right;
+		position: relative;
+		&.edit:before {
+			font-family: $icomoon;
+			content: "\e901";
+			position: absolute;
+			left: -22px;
+		}
 	}
 	.wrapper-submit {
 		text-align: center;
