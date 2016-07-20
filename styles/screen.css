@@ -253,19 +253,19 @@ p {
   font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("/fonts/montserrat/montserrat-regular-webfont.woff") format("woff"), url("/fonts/montserrat/montserrat-regular-webfont.ttf") format("truetype"); }
+  src: url("../fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-regular-webfont.woff") format("woff"), url("../fonts/montserrat/montserrat-regular-webfont.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Montserrat Bold";
   font-style: bold;
   font-weight: 700;
-  src: url("/fonts/montserrat/montserrat-bold-webfont.woff2") format("woff2"), url("/fonts/montserrat/montserrat-bold-webfont.woff") format("woff"), url("/fonts/montserrat/montserrat-bold-webfont.ttf") format("truetype"); }
+  src: url("../fonts/montserrat/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-bold-webfont.woff") format("woff"), url("../fonts/montserrat/montserrat-bold-webfont.ttf") format("truetype"); }
 
 @font-face {
   font-family: "icomoon";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/icomoon/icomoon.woff2") format("woff2"), url("/fonts/icomoon/icomoon.woff") format("woff"), url("/fonts/icomoon/icomoon.ttf") format("truetype"); }
+  src: url("../fonts/icomoon/icomoon.woff2") format("woff2"), url("../fonts/icomoon/icomoon.woff") format("woff"), url("../fonts/icomoon/icomoon.ttf") format("truetype"); }
 
 .span-1 {
   width: 100%; }
@@ -1728,7 +1728,7 @@ html {
   min-height: 100vh; }
 
 body {
-  background: #043256 url("../../images/bg.jpg") top/cover no-repeat;
+  background: #043256 url("../images/bg.jpg") top/cover no-repeat;
   padding-bottom: 50px;
   font-size: 16px;
   line-height: 24px;
