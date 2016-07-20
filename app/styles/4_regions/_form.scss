@@ -1,0 +1,136 @@
+.form {
+	.header {
+		overflow: hidden;
+		margin-bottom: 40px;
+		.span-8 {
+			margin-top: 38px;
+			@include device-size(tablet) {
+				width: 58%;
+			}
+			@include device-size(mobile) {
+				margin: 38px 0 20px 0;
+				width: 100%;
+			}
+		}
+		.span-4 {
+			margin-top: 42px;
+			@include device-size(tablet) {
+				width: 41%;
+			}
+			@include device-size(mobile) {
+				margin-top: 0;
+				width: 100%;
+			}
+		}
+	} 
+	.question {
+		background: #fff;
+		.inner-wrapper {
+			max-width: 960px;
+		}
+		&.complete {
+			h1 {
+				&:before {
+					font-family: $icomoon;
+					content: "\e900";
+					color: $white;
+					background: $seagreen;
+					border-radius: 100%;
+					padding: 5px;
+					font-size: 16px;
+					vertical-align: top;
+					margin-right: 12px;
+				}
+			}
+		}
+		.fields-wrapper,
+		fieldset {
+			overflow: hidden;
+			clear: both;
+		}
+		.fields-wrapper {
+			display: none;
+			margin-bottom: 42px;
+			.span-6 {
+				width: 48%;
+				margin-right: 4%;
+				&:last-child {
+					margin-right: 0;
+				}
+				@include device-size(mobile) {
+					width: 100%;
+					margin-right: 0;
+				}
+			}
+			.span-8 {
+				width: 60.35514%;
+				margin-right: 6.93458%;
+				@include device-size(mobile) {
+					width: 100%;
+					margin-right: 0;
+				}
+			}
+			.span-4 {
+				@include device-size(mobile) {
+					width: 100%;
+				}
+			}
+			@include device-size(mobile) {
+				input[name="zipcode"] {
+					margin-top: 18px;
+					&:focus,
+					&:hover {
+						margin-top: 17px;
+					}
+				}
+			}
+		}
+		.next {
+			display: none;
+		}
+		.user-action {
+			display: inline-block;
+			float: right;
+			position: relative;
+			&.edit:before {
+				font-family: $icomoon;
+				content: "\e901";
+				position: absolute;
+				left: -24px;
+			}
+			@include device-size(mobile) {
+				float: none;
+				&.edit {
+					margin-left: 26px;
+				}
+			}
+		}
+		&.active {
+			.fields-wrapper,
+			.next {
+				display: block;
+			}
+		}
+		&.one {
+			overflow: visible;
+			margin-top: 50px;
+		}
+		&.two {
+			&.start {
+				opacity: 0.7;
+			}
+			margin-top: 25px;
+			.span-6 > div {
+				margin-bottom: 18px;
+			}
+			label span {
+				display: inline-block;
+				float: right;
+				margin-top: -3px;
+			}
+		}
+	}
+	.wrapper-submit {
+		text-align: center;
+	}
+}

@@ -1,0 +1,38 @@
+    $small-screen: 240px;
+    $mobile : $small-screen;
+    // $medium-screen: 640px;
+    $medium-screen: 700px; // TODO: changed medium-screen point to match grid breakpoints - make sure this didn't cause problems anywhere
+    $tablet : $medium-screen;
+    $large-screen: 1024px;
+    $desktop : $large-screen;
+
+    @mixin device-size($media) {
+      @if $media == mobile {
+      // @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) { @content; }
+      @media only screen and (max-width: $medium-screen) { @content; }
+      // 
+      }
+      @else if $media == bigtablet {
+      @media only screen and (min-width: $medium-screen + 1) and (max-width: $large-screen + 220) { @content; }
+      }
+      @else if $media == tablet {
+      @media only screen and (min-width: $medium-screen + 1) and (max-width: $large-screen) { @content; }
+      }
+
+      @else if $media == mediumtablet {
+      @media only screen and (min-width: $medium-screen + 1) and (max-width: 1100px) { @content; }
+      }
+
+      @else if ($media == tablet-and-mobile) or ($media == mobile-and-tablet) {
+      @media only screen and (max-width: $large-screen) { @content; }
+      }
+
+      @else if $media == desktop {
+      @media only screen and (min-width: $large-screen + 1) { @content; }
+      }
+
+      @else if ($media == tablet-and-desktop) or ($media == desktop-and-tablet)  {
+      @media only screen and (min-width: $medium-screen) { @content; }
+      }
+
+    }

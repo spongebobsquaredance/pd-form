@@ -1,0 +1,79 @@
+///*------------------------------------*\
+//    #CORE/HTML - TYPOGRAPHY
+//\*------------------------------------*/
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+em {
+  font-style: normal;
+}
+
+strong {
+  font-weight: 700;
+}
+
+p {}
+
+blockquote {}
+
+cite {}
+
+// Uppercase
+.user-action,
+.question.two label,
+.next,
+input[type='submit'] {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.hero {
+	h1 {
+		font-family: $sansRegular;
+		color: $white;
+		font-size: 85px;
+	}
+	h2 {
+		color: $dustblue;
+		font-size: 20px;
+		// -webkit-font-smooting: antialiased;
+	}
+}
+
+.form {
+	h1 {
+		color: $caveblack;
+		font-family: $sansBold;
+		font-size: 32px;
+		margin: 0 0 18px 0;
+	}
+	h2 {
+		color: $dovegray;
+		font-size: 18px;
+		margin: 0 0 0 3px;
+	}
+	.user-action {
+		color: $silver;
+		font-size: 13px;
+	}
+	.next a {
+		color: $white;
+	}
+	.question.one input {
+		color: $dovegray;
+		font-size: 14px;
+	}
+	.question.two label {
+		color: $seagreen;
+		font-size: 14px;
+	}
+}
+
+footer {
+	color: $dustblue;
+	font-size: 13px;
+}
+
+
+

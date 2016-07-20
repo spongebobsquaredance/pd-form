@@ -1,0 +1,16 @@
+.statemenu {
+	color: $dovegray;
+	border: 1px solid $mercury; 
+	font-size: 14px;
+	padding: 10px 0 10px 20px;
+	margin: 1px 5% 1px 1px;
+	width: 100%;
+	@include device-size(mobile) {
+		width: 99%;
+	}
+}
+.statemenuHover,
+.statemenuFocus {
+	border: 2px solid $seagreen;
+	margin: 0 5.2% 0 0;
+}

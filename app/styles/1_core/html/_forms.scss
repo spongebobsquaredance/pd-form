@@ -1,0 +1,85 @@
+///*------------------------------------*\
+//    #CORE/HTML - FORMS
+//\*------------------------------------*/
+
+form {}
+
+button {}
+
+select,
+input {
+  @include font-size(16, 24);
+}
+
+fieldset {
+	margin: 0;
+}
+
+input {
+	border: 1px solid $mercury;
+	&::-webkit-input-placeholder {
+		color: $dovegray;
+	}
+	&:-moz-placeholder {
+		color: $dovegray;
+	}
+	&::-moz-placeholder {
+		color: $dovegray;
+	}
+	&:-ms-input-placeholder {
+		color: $dovegray;
+	}
+}
+
+input[type='submit'],
+input[type='radio'],
+input[type='checkbox'] {
+  width: auto;
+}
+
+input[type='submit'] {
+	display: inline-block;	
+	border: none;
+	color: $white;
+	background: $seagreen;
+	background: -moz-linear-gradient(-45deg,  rgba(56,163,140,1) 40%, rgba(42,146,144,1) 70%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(56,163,140,1) 40%,rgba(42,146,144,1) 70%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(56,163,140,1) 40%,rgba(42,146,144,1) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38a38c', endColorstr='#2a9290',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	padding: 16px 80px;
+	margin-top: 60px;
+	opacity: 0.7;
+	&.active {
+		opacity: 1;
+		cursor: pointer;
+	}
+}
+
+input[type='text'] {}
+
+input[type='password'] {}
+
+input[type='radio'] {}
+
+input[type='checkbox'] {}
+
+span.checkButton {
+	width: 100%;
+}
+
+label {
+  display: block;
+}
+
+textarea {
+	border: 1px solid $mercury;
+	color: $dovegray;
+	line-height: 1.25;
+	width: 100%;
+	margin-top: 18px;
+}
+
+select {
+	border: 1px solid $mercury;
+	border-radius: 0;
+}
