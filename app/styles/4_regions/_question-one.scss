@@ -11,26 +11,41 @@
 			margin: 0 0 18px 0;
 		}	
 	}
-	fieldset div.valid {
+	fieldset div {
 		position: relative;
-		&:before {
-			font-family: $icomoon;
-			content: "\e900";
-			color: $white;
-			background: $seagreen;
-			border-radius: 100%;
-			padding-left: 3px;
-			font-size: 12px;
-			position: absolute;
-			height: 17px;
-			width: 17px;
-			top: 15px;
-			left: 12px;
-			line-height: 1.6;
+	}
+	fieldset div,
+	.statemenu {
+		&.valid {
+			&:before {
+				font-family: $icomoon;
+				content: "\e900";
+				color: $white;
+				background: $seagreen;
+				border-radius: 100%;
+				padding-left: 3px;
+				font-size: 12px;
+				position: absolute;
+				height: 17px;
+				width: 17px;
+				top: 15px;
+				left: 12px;
+				line-height: 1.6;
+			}
+			input {
+				padding-left: 35px;
+			}
+			.statemenuInner {
+				padding-left: 22px;
+			}
 		}
-		input,
-		.statemenu {
-			padding-left: 35px;
+		&.error input {
+			border: 2px solid $rederror;
+			margin: 0 0 18px 0;
 		}
+	}
+	.statemenu.error {
+		border: 2px solid $rederror;
+		margin: 0 0 18px 0;
 	}
 }

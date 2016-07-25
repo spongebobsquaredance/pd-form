@@ -2,7 +2,7 @@
 	<div class="outer-wrapper">
 		<div class="inner-wrapper">
 			<form id="user-info" action="" method="POST">
-				<section class="question one active">
+				<section class="question one active initial">
 					<div class="toggle-container">
 						<a class="arrow-toggle" href="#"></a>
 					</div>
@@ -13,7 +13,7 @@
 								<h2>Information about you and your business.</h2>
 							</div>
 							<div class="span-4">
-								<a class="user-action edit" href="#">Edit Section</a>
+								<a class="user-action save-place" href="#">Come Back to this Question</a>
 							</div>
 						</div>
 						<div class="fields-wrapper">
@@ -21,21 +21,21 @@
 								<fieldset>
 									<div>
 										<label for="busname" class="visuallyhidden">Business Name</label>
-										<input class="busname" name="busname" type="text" placeholder="Business Name" required>
+										<input class="busname" name="busname" type="text" id="busname" placeholder="Business Name" required>
 									</div>
 									<div>
 										<label for="bustype" class="visuallyhidden">Business Type</label>
-										<input name="bustype" type="text" placeholder="Business Type" required>
+										<input name="bustype" type="text" id="bustype" placeholder="Business Type" required>
 									</div>
 								</fieldset>
 								<fieldset>
 									<div>
 										<label for="yourname" class="visuallyhidden">Your Name</label>
-										<input name="yourname" type="text" placeholder="Your Name" required>
+										<input name="yourname" type="text" id="yourname" placeholder="Your Name" required>
 									</div>
 									<div>
 										<label for="youremail" class="visuallyhidden">Your Email</label>
-										<input name="youremail" type="email" placeholder="Your Email" required>
+										<input name="youremail" type="email" id="youremail" placeholder="Your Email" required>
 									</div>
 								</fieldset>
 							</div>
@@ -43,15 +43,15 @@
 								<fieldset>
 									<div>
 										<label for="busstreet" class="visuallyhidden">Business Street Address</label>
-										<input name="busstreet" type="text" placeholder="Business Street Address" required>
+										<input name="busstreet" type="text" id="busstreet" placeholder="Business Street Address" required>
 									</div>
 									<div>
 										<label for="busapt" class="visuallyhidden">Business Suite/Apt Number (Optional)</label>
-										<input name="busapt" type="text" placeholder="Business Suite/Apt Number (Optional)">
+										<input name="busapt" type="text" id="busapt" placeholder="Business Suite/Apt Number (Optional)">
 									</div>
 									<div>
 										<label for="buscity" class="visuallyhidden">Business City</label>
-										<input name="buscity" type="text" placeholder="Business City" required>
+										<input name="buscity" type="text" id="buscity" placeholder="Business City" required>
 									</div>
 									<div class="span-8">
 										<label for="busstate" class="visuallyhidden">Business State</label>
@@ -112,7 +112,7 @@
 									</div>
 									<div class="span-4">
 										<label for="zipcode" class="visuallyhidden">ZIP Code</label>
-										<input name="zipcode" type="text" placeholder="ZIP Code" required>
+										<input name="zipcode" type="text" id="zipcode" placeholder="ZIP Code" required>
 									</div>
 								</div>
 							</fieldset>
@@ -153,8 +153,8 @@
 									  <label for="reputation" class="label-for-check">Reputation/Trust</label>
 									</div>
 									<div>
-										<label for="other">Other <span class="icon-chevron-right"></span></label>
-			    						<textarea name="other"></textarea>
+										<label for="other" class="other">Other <span class="icon-chevron-right"></span></label>
+			    						<textarea name="other" id="other" class="other-text"></textarea>
 			    					</div>
 		    					</div>
 							</fieldset>
@@ -162,7 +162,7 @@
 					</div>
 				</section>
 				<div class="wrapper-submit">
-					<input type="submit" value="Submit" class="button active" />
+					<input type="submit" value="Submit" class="button" disabled />
 				</div>
 			</form>
 		</div>

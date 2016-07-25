@@ -4,6 +4,10 @@
 		padding: 10px 0;
 		text-align: center;
 		cursor: pointer;
+		&.other.active {
+			background: $seagreen;
+	  		color: $white;
+		}
 	}
 	input[type="checkbox"] {
 		position: absolute;
