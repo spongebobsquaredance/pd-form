@@ -253,19 +253,19 @@ p {
   font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-regular-webfont.woff") format("woff"), url("../fonts/montserrat/montserrat-regular-webfont.ttf") format("truetype"); }
+  src: url("/fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("/fonts/montserrat/montserrat-regular-webfont.woff") format("woff"), url("/fonts/montserrat/montserrat-regular-webfont.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Montserrat Bold";
   font-style: bold;
   font-weight: 700;
-  src: url("../fonts/montserrat/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-bold-webfont.woff") format("woff"), url("../fonts/montserrat/montserrat-bold-webfont.ttf") format("truetype"); }
+  src: url("/fonts/montserrat/montserrat-bold-webfont.woff2") format("woff2"), url("/fonts/montserrat/montserrat-bold-webfont.woff") format("woff"), url("/fonts/montserrat/montserrat-bold-webfont.ttf") format("truetype"); }
 
 @font-face {
   font-family: "icomoon";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/icomoon/icomoon.woff2") format("woff2"), url("../fonts/icomoon/icomoon.woff") format("woff"), url("../fonts/icomoon/icomoon.ttf") format("truetype"); }
+  src: url("/fonts/icomoon/icomoon.woff2") format("woff2"), url("/fonts/icomoon/icomoon.woff") format("woff"), url("/fonts/icomoon/icomoon.ttf") format("truetype"); }
 
 .span-1 {
   width: 100%; }
@@ -1728,7 +1728,7 @@ html {
   min-height: 100vh; }
 
 body {
-  background: #043256 url("../images/bg.jpg") top/cover no-repeat;
+  background: #043256 url("../../images/bg.jpg") top/cover no-repeat;
   padding-bottom: 50px;
   font-size: 16px;
   line-height: 24px;
@@ -1829,6 +1829,9 @@ footer {
   padding: 10px 0;
   text-align: center;
   cursor: pointer; }
+  .question.two label.other.active {
+    background: #38a38c;
+    color: #fff; }
 
 .question.two input[type="checkbox"] {
   position: absolute;
@@ -2046,22 +2049,38 @@ header {
     border: 2px solid #38a38c;
     margin: 0 0 18px 0; }
 
-.question.one fieldset div.valid {
+.question.one fieldset div {
   position: relative; }
-  .question.one fieldset div.valid:before {
-    font-family: "icomoon";
-    content: "\e900";
-    color: #fff;
-    background: #38a38c;
-    border-radius: 100%;
-    padding-left: 3px;
-    font-size: 12px;
-    position: absolute;
-    height: 17px;
-    width: 17px;
-    top: 15px;
-    left: 12px;
-    line-height: 1.6; }
-  .question.one fieldset div.valid input,
-  .question.one fieldset div.valid .statemenu {
-    padding-left: 35px; }
+
+.question.one fieldset div.valid:before,
+.question.one .statemenu.valid:before {
+  font-family: "icomoon";
+  content: "\e900";
+  color: #fff;
+  background: #38a38c;
+  border-radius: 100%;
+  padding-left: 3px;
+  font-size: 12px;
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  top: 15px;
+  left: 12px;
+  line-height: 1.6; }
+
+.question.one fieldset div.valid input,
+.question.one .statemenu.valid input {
+  padding-left: 35px; }
+
+.question.one fieldset div.valid .statemenuInner,
+.question.one .statemenu.valid .statemenuInner {
+  padding-left: 22px; }
+
+.question.one fieldset div.error input,
+.question.one .statemenu.error input {
+  border: 2px solid #b22e00;
+  margin: 0 0 18px 0; }
+
+.question.one .statemenu.error {
+  border: 2px solid #b22e00;
+  margin: 0 0 18px 0; }
